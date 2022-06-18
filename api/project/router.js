@@ -1,7 +1,7 @@
 // build your `/api/projects` router here
 const router = require('express').Router();
 const projectModel = require('./model');
-const PMW = require('./project-middleware');
+const PMW = require('./middleware');
 
 router.get('/', (req, res, next) => {
     projectModel.findAll()
